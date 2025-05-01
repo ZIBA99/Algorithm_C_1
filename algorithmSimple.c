@@ -1,72 +1,29 @@
 #define _CRT_SECURE_NO_WARNINGS
 
-//#include <stdio.h>
-//
-//int max3(int a, int b, int c)
-//{
-//	int max = a;
-//	if (b > max) max = b;
-//	if (c > max) max = c;
-//	return max;
-//}
-//
-//int main(void)
-//{
-//
-//	printf("max3(%d, %d, %d) = %d\n", 3, 2, 1, max3(3, 2, 1));
-//
-//	return 0;
-//}
+//ë„¤ ì •ìˆ˜ì˜ ìµœëŒ“ê°’
+#include <stdio.h>
+
+int  max4(int a, int b, int c, int d)
+{
+	int max = a;
+	if (max < b) max = b;
+	if (max < c) max = c;
+	if (max < d) max = d;
+	return max;
+}
+
+int main(void)
+{
+	int a, b, c, d;
+	printf("ì •ìˆ˜ 4ê°œë¥¼ ì…ë ¥í•˜ì‹œì˜¤. ");
+	scanf("%d %d %d %d", &a, &b, &c, &d);
+	printf("max4(%d %d %d %d) = %d\n", a, b, c, d, max4(a, b, c, d));
+
+	return 0;
+}
 
 
-//#include <stdio.h>
-//
-//int  min4(int a, int b, int c, int d)
-//{
-//	int min = a;
-//	if (min > b) min = b;
-//	if (min > c) min = c;
-//	if (min > d) min = d;
-//	return min;
-//}
-//
-//
-//int main(void)
-//{
-//	/*int a, b, c, d;
-//	printf("Á¤¼ö 4°³¸¦ ÀÔ·ÂÇÏ½Ã¿À. ");
-//	scanf("%d %d %d %d", &a, &b, &c, &d);
-//	printf("max4(%d %d %d %d) = %d\n", a, b, c, max4(a, b, c, d));*/
-//
-//	printf("min4(%d, %d, %d %d) = %d\n", 20, 2, 1, 12, min4(20, 2, 1, 12));
-//
-//	return 0;
-//}
-
-
-//#include <stdio.h>
-//
-//int  max4(int a, int b, int c, int d)
-//{
-//	int max = a;
-//	if (max < b) max = b;
-//	if (max < c) max = c;
-//	if (max < d) max = d;
-//	return max;
-//}
-//
-//
-//int main(void)
-//{
-//	int a, b, c, d;
-//	printf("Á¤¼ö 4°³¸¦ ÀÔ·ÂÇÏ½Ã¿À. ");
-//	scanf("%d %d %d %d", &a, &b, &c, &d);
-//	printf("max4(%d %d %d %d) = %d\n", a, b, c, d, max4(a, b, c, d));
-//
-//	return 0;
-//}
-
-
+//ì„¸ ì •ìˆ˜ì˜ ì¤‘ì•™ê°’
 #include <stdio.h>
 int med3(int a, int b, int c)
 {
@@ -82,9 +39,9 @@ int med3(int a, int b, int c)
 int main()
 {
 	int a, b, c;
-	printf("¼¼ Á¤¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À. ");
+	printf("ì„¸ ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤. ");
 	scanf("%d %d %d", &a, &b, &c);
-	printf("¼¼ Á¤¼öÀÇ Áß¾Ó°ª: %d", med3(a, b, c));
+	printf("ì„¸ ì •ìˆ˜ì˜ ì¤‘ì•™ê°’: %d", med3(a, b, c));
 
 	return 0;
 }
